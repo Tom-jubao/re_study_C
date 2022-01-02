@@ -94,3 +94,35 @@
 		   return 0;
 	      }
 	 */
+
+
+2022.1.2
+
+//数据类型所占字节数 
+/*#include<stdio.h>
+
+  int main()
+  {
+      printf("%d\n",sizeof(char));     // 1
+      printf("%d\n",sizeof(short));    // 2
+      printf("%d\n",sizeof(int));      // 4
+      printf("%d\n",sizeof(long));     // 4
+      printf("%d\n",sizeof(long long));// 8
+      printf("%d\n",sizeof(float));    // 4
+      printf("%d\n",sizeof(double));   // 8
+  }
+*/
+
+计算机中的单位
+    bit - 比特位
+    byte - 字节
+    kb
+    mb
+    gb
+    pb
+
+计算机是硬件 - 通电
+    正电    负电
+      1       0
+
+字节跳动 - 抖音/今日头条/西瓜视频 
