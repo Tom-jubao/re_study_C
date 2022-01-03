@@ -126,3 +126,72 @@
       1       0
 
 字节跳动 - 抖音/今日头条/西瓜视频 
+
+2022.1.3
+
+C语言标准规定
+    sizeof(long) >= sizeof(int)
+/*
+    #include<stdio.h>
+
+    int main()
+    {
+         //年龄
+	 //20
+	 short age = 20;// 向内存申请2个字节 = 16个比特位，用来存放20
+	 float weight = 95.6f;// 向内存申请4个字节，存放小数
+
+	 return 0;
+    }
+*/
+
+/*
+    #include<stdio.h>
+
+    int num2 = 20;//全局变量 - 定义在代码块（{}）之外的变量
+    
+    int main()
+    {
+         int num1 = 10;// 局部变量 - 定义在代码块（{}）内部的变量
+
+	 return 0;
+    }
+*/
+
+/*
+    #include<stdio.h>
+
+    int a = 100;
+
+    int main()
+    {
+         int a = 10;
+	 //局部变量和全局变量的名字建议不要相同 - 容易误会，产生bug
+	 //当局部变量和全局变量的名字相同的时候，局部变量优先
+	 
+	 printf("%d\n",a);
+
+	 return 0;
+    }
+*/
+
+/*
+    #include<stdio.h>
+
+    int main()
+    {
+         //计算2个数的和
+	 
+	 int num1 = 0;
+	 int num2 = 0;
+         
+         //输入数据 - 使用scanf函数
+	 scanf("%d%d",&num1, &num2); // & - 取地址符号
+
+	 int sum = 0;
+	 sum = num1 + num2;
+	 printf("sum = %d\n", sum);
+
+	 return 0;
+    }
+*/
